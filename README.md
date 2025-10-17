@@ -8,6 +8,14 @@ A modern Chrome Extension that intelligently tracks page visit history with real
 ![React](https://img.shields.io/badge/react-18+-blue)
 ![FastAPI](https://img.shields.io/badge/fastapi-0.104-green)
 
+## 📸 Screenshots
+
+### Side Panel Interface
+![Side Panel Interface](./assets/sidepanel.png)
+
+### Visit History
+![Visit History](./assets/visit-history.png)
+
 ---
 
 ## 🏗️ Architecture
@@ -231,6 +239,9 @@ chrome-history-sidepanel/
 │   └── webpack.config.js        # Build configuration
 │
 ├── docker-compose.yml           # Service orchestration
+├── assets/                      # sidepanel screenshots
+|    ├── sidepanel.png
+│    └── visit-history.png        
 ├── .env                         # Environment variables
 ├── .env.example                 # Environment template
 ├── setup.sh                     # Automated setup script
