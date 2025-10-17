@@ -8,14 +8,6 @@ A modern Chrome Extension that intelligently tracks page visit history with real
 ![React](https://img.shields.io/badge/react-18+-blue)
 ![FastAPI](https://img.shields.io/badge/fastapi-0.104-green)
 
-## 📸 Screenshots
-
-### Side Panel Interface
-*Beautiful gradient UI with glassmorphism design showing current page metrics and visit history timeline.*
-
-### Live Metrics Dashboard
-*Real-time tracking of links, words, and images with smooth animations and hover effects.*
-
 ---
 
 ## 🏗️ Architecture
