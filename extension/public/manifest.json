@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome History Sidepanel",
+    "version": "1.0.0",
+    "description": "Track page visit history with analytics - links, words, and images count",
+    "permissions": [
+      "activeTab",
+      "sidePanel",
+      "storage",
+      "tabs"
+    ],
+    "host_permissions": [
+      "http://localhost:8000/*",
+      "http://127.0.0.1:8000/*",
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "side_panel": {
+      "default_path": "sidepanel.html"
+    },
+    "action": {
+      "default_title": "Open History Sidepanel"
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "commands": {
+      "_execute_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+H"
+        }
+      }
+    }
+  }
